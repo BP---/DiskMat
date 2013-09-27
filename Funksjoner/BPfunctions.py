@@ -183,4 +183,20 @@ def FindEndZeros(tall):
             zero = 0
     return zero
 
+def gcd(tall1, tall2):
+    a= tall1
+    b= tall2
+    holder = 0
+    gcd = 0
+    done = False
+    while not done:
+        a = holder
+        a = b
+        b = holder%b
+        if(b==0):
+            gcd = a
+            done = True
+    return gcd
 
+
+    
