@@ -209,3 +209,16 @@ def lcm(tall1, tall2):
         a += 1
     a = a*tall1
     return a
+
+#========================= updated 30.09.13 ===========================
+
+#tar inn to tall og deler de med greatest common divisor til tallene
+#returnerer tallene hver for seg
+def ReduceFraction(tall1, tall2):
+    divisor = gcd(tall1, tall2)
+    tall1 = tall1 / divisor
+    tall2 = tall2 / divisor
+    return tall1, tall2
+
+
+
