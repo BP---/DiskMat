@@ -183,6 +183,8 @@ def FindEndZeros(tall):
             zero = 0
     return zero
 
+#Denne funksjonen tar inn to tall og bruker den euklidske algoritmen
+#for å finne greatest common divisor
 def gcd(tall1, tall2):
     a= tall1
     b= tall2
@@ -197,6 +199,8 @@ def gcd(tall1, tall2):
             gcd = a
             done = True
     return gcd
+
+#denne finner least common multiple
 def lcm(tall1, tall2):
     a = 2
     while True:
@@ -205,3 +209,16 @@ def lcm(tall1, tall2):
         a += 1
     a = a*tall1
     return a
+
+#========================= updated 30.09.13 ===========================
+
+#tar inn to tall og deler de med greatest common divisor til tallene
+#returnerer tallene hver for seg
+def ReduceFraction(tall1, tall2):
+    divisor = gcd(tall1, tall2)
+    tall1 = tall1 / divisor
+    tall2 = tall2 / divisor
+    return tall1, tall2
+
+
+
