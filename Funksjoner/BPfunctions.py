@@ -190,13 +190,18 @@ def gcd(tall1, tall2):
     gcd = 0
     done = False
     while not done:
-        a = holder
+        holder = a
         a = b
         b = holder%b
         if(b==0):
             gcd = a
             done = True
     return gcd
-
-
-    
+def lcm(tall1, tall2):
+    a = 2
+    while True:
+        if(a*tall1%tall2 ==0):
+            break
+        a += 1
+    a = a*tall1
+    return a

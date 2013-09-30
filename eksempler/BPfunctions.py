@@ -205,6 +205,3 @@ def lcm(tall1, tall2):
         a += 1
     a = a*tall1
     return a
-
-
-
