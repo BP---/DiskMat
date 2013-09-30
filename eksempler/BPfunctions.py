@@ -221,4 +221,26 @@ def ReduceFraction(tall1, tall2):
     return tall1, tall2
 
 
+#Denne returnerer en liste med en fibbonaccirekke frem til et gitt tall
+def FibbonacciList(endNumber):
+    fibList = []
+    if(endNumber == 1):
+        fibList = {0}
+        break
+    elif(endNumber ==2):
+        fibList = {0,1}
+        break
+    fibList = {0,1}
+    
+    
+    for x in range(2, endNumber+1):
+        fibList.append(fibList[x-1] + fibList[x-2])
+
+    return fibList
+                       
+    
+
+
+
+
 
