@@ -225,16 +225,16 @@ def ReduceFraction(tall1, tall2):
 def FibbonacciList(endNumber):
     fibList = []
     if(endNumber == 1):
-        fibList = {0}
-        break
+        fibList = [0]
+        
     elif(endNumber ==2):
-        fibList = {0,1}
-        break
-    fibList = {0,1}
-    
-    
-    for x in range(2, endNumber+1):
-        fibList.append(fibList[x-1] + fibList[x-2])
+        fibList = [0,1]
+    else:    
+        fibList = [0,1]
+        
+        
+        for x in range(2, endNumber+1):
+            fibList.append(fibList[x-1] + fibList[x-2])
 
     return fibList
                        
